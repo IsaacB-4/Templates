@@ -3,6 +3,7 @@
 //May 2, 2021
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 //Template for double and float
@@ -10,6 +11,13 @@ template <class T>
 T half(T number)
 {
 	return number / 2;
+}
+//Overload for int
+int half(int number)
+{
+	double holder = number; 
+	round(holder / 2); 
+	return static_cast<int>(holder);
 }
 
 int main()
