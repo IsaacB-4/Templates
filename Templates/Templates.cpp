@@ -5,6 +5,13 @@
 #include <iostream>
 using namespace std;
 
+//Template for double and float
+template <class T>
+T half(T number)
+{
+	return number / 2;
+}
+
 int main()
 {
 	//Driver for half
